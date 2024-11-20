@@ -27,6 +27,7 @@ class TestHootel(object):
         login_btn = self.browser.find_element(By.XPATH, '//a[@class="nav-link"]')
         login_btn.click()
 
+
         email_input = self.browser.find_element(By.ID, 'email')
         email_input.send_keys('hiwasi1765@wisnick.com')
 
