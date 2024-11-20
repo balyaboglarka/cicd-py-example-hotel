@@ -14,6 +14,7 @@ class TestHootel(object):
         options.add_argument('--headless') #nem nyit böngészőt, de ugyanúgy böngészőként fog működni
         self.browser = webdriver.Chrome(options=options)
         self.browser.get(URL)
+        self.browser.set_window_size(1050, 800, "current")
 
     def teardown_method(self):
         self.browser.quit()
